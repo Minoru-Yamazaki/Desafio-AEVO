@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <script src="Fetch.js"></script>
+        <title>Page Title</title> 
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid pt-3 pb-3 mb-3 bg-dark text-white"> 
+            <h1 class="text-center">Weather Page</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class=" row mb-3">
+                <div class="col-sm-12 text-right">
+                    <label><strong>Informe a Cidade: </strong></label>
+                    <input type="text" id="txtCity" name="txtCity" value="Mogi das Cruzes">
+                    <button class="btn btn-dark" type="button" onclick="pesquisar()">Pesquisar</button>
+                </div>                
+            </div>
+            
+            <h4 class="text-primary">Informações da localização:</h4>
+            
+            <div class="row mb-3">
+                <div class="col-sm-3"><strong>Cidade: </strong> 
+                    <label id="labelCity"></label>
+                </div>
+                <div class="col-sm-3"><strong>País: </strong> 
+                    <label id="labelCountry"></label>
+                </div>
+                <div class="col-sm-3"><strong>Estado: </strong> 
+                    <label id="labelRegion"></label>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-3"><strong>Latitude: </strong> 
+                    <label id="labelLat"></label>
+                </div>
+                <div class="col-sm-3"><strong>Longitude: </strong> 
+                    <label id="labelLon"></label>
+                </div>
+                <div class="col-sm-3"><strong>Horário Local: </strong> 
+                    <label id="labelLocaltime"></label>
+                </div>
+                <div class="col-sm-3"><strong>Fuso Horáiro: </strong> 
+                    <label id="labelTimezone_id"></label>
+                </div>
+            </div>
+
+            <h4 class="text-primary">Informações do clima:</h4>
+
+            <div class="row mb-3">
+                <div class="col-sm-3"><strong>Temperatura: </strong> 
+                    <label id="labelTemperature"></label>
+                </div>
+                <div class="col-sm-3"><strong>Descrição do Clima: </strong> 
+                    <label id="labelWeather_desc"></label>
+                </div>
+                <div class="col-sm-3"><strong>Precipitação: </strong> 
+                    <label id="labelPrecip"></label>
+                </div>
+                <div class="col-sm-3"><strong>Índice: </strong> 
+                    <label id="labelUv_index"></label>
+                </div>
+                
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-3"><strong>Sensação Térmica: </strong> 
+                    <label id="labelFeelslike"></label>
+                </div>
+                <div class="col-sm-3"><strong>Humidade Relativa do ar: </strong> 
+                    <label id="labelHumidity"></label>
+                </div>
+                <div class="col-sm-3"><strong>Velocidade do Vento: </strong> 
+                    <label id="labelWind_speed"></label>
+                </div>
+                <div class="col-sm-3"><strong>Pressão Atmosférica: </strong> 
+                    <label id="labelPressure"></label>
+                </div>                
+            </div>
+        </div>
+    </body>
+</html>
